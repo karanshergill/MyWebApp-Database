@@ -3,7 +3,7 @@ import InsertLabelForm from './components/InsertForm.jsx';
 const App = () => {
   const handleFormSubmit = async (data) => {
     try {
-      const response = await fetch('/db/api/insert', {
+      const response = await fetch('https://fuzzlists-api.karanshergill.workers.dev/api/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
